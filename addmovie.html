@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add movie</title>
+  <meta name="description" content="Add movie">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="addmovie.css"/>
+  <link rel="stylesheet" href="reset.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300"/>
+  <!--script/css-->
+  <style>
+   #main{
+     width: 100 px;
+
+   }
+footer{
+
+  float: right;
+}
+#logo
+{
+  float: left;
+
+}
+#movie-name
+{
+  text-align: left;
+}
+fb
+{
+float: left;
+}
+header
+{
+  padding: 40px;
+  height: 40px;
+}
+
+
+
+#content
+{
+  float: right;
+  font-size: 30px;
+  padding:
+}
+ ul li{
+  list-style: none;
+  padding: 10px,20px;
+}
+body {
+  background-color: purple;
+  color: white;
+  font-family: 'Lato',sans-serif;
+
+}
+#Home
+{
+  margin-left: 20px;
+  color: yellow;
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+   <header>
+     <div id="main">
+     <img src = "./images/projector-logo.png" alt="image" class="logo" width="300" id="logo"/>
+
+    <nav>
+       <ul id="content">
+         <a href="/" id="Home">Home</a>
+        <a href="#" id="Home">Add movie</a>
+
+    </nav>
+        </div>
+    <br> <br> <br> <br>
+  </header>
+  <center>
+  <h2> Add a movie</h2>
+  <form action="/sample-action" class="addmovie">
+    <ul>
+      <li>
+        <label id="movie-name">Movie name</label>
+        <input id="movie-name" type="text" name="movie-name"/>
+      </li>
+
+ <br><label id="release-yr"> Release year </label>
+ <br><input type="text" id="release-yr" name="release-yr"/>
+
+
+<li><br>
+  <label for="lang" > Language </label>
+  <select name ="lang">
+    <option value="empty"> </option>
+   <option value="english">English </option>
+   <option value="tamil">Tamil </option>
+ </select>
+
+<label for="rating">rating</label>
+
+   <select name = "rating">
+     <option value="empty"> </option>
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+     <option value="4">4</option>
+     <option value="5">5</option>
+  </select>
+</li>
+<li><br>
+  <label for="url">Thumbnail Url</label>
+  <br><input type ="url" id="Thumbnail" name="url">
+</li>
+<li><br>
+  <label for="plot">Plot</label>
+  <br><textarea rows="4" cols="50">
+  </textarea>
+</li>
+<li>
+  <br><label for="Poster url">Poster Url</label>
+</li>
+<br><input type ="poster" id="poster" name="poster">
+<li>
+  <br><label for="Cast">Cast</label>
+  <br><textarea rows="4" cols="50">
+  </textarea>
+</li>
+</ul>
+ <br><input type ="button" id="save" value="Save"></input>
+</form>
+
+</center>
+<footer>
+  <img src = "./images/projector-logo.png" alt="image" class="logo" width="300" id="logo"/>
+  <img src = "./images/facebook.png" alt="image" class="fb" width="50" id="logo"/>
+  <img src = "./images/instagram.png" alt="image" class="insta" width="50" id="logo"/>
+  <img src = "./images/twitter.png" alt="image" class="twitter" width="50" id="logo"/>
+</footer>
+
+</html>
